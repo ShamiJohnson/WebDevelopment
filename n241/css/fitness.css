@@ -1,0 +1,386 @@
+/*
+ * Filename: fitness.html
+ * Author: Ehtsham Nisar (EN)
+ * Create Date: 19 March 2018
+ */
+
+/*
+ * Purpose: Create a informant fitness page.
+ 
+ * Layout: The layout for this website is simple with two link columns directing to different sources
+ and in the middle there are pictures and information texts.
+ 
+ 
+ I was able to utilize six of these elements: id or class, float, margin, text-align, width, padding.
+ 
+ I was alsoable to use these 6 elements to style my page: <article>, <footer>, <header>, <time>, <nav>, <section>.
+ 
+ 
+ */
+
+/*Requirement 2 :  The HTML and CSS files should have header block comments that contain your name and the date. */
+
+
+
+
+/*Requirement : page content centered */
+/*Requirement :  */
+/*Requirement :  */
+/*Requirement :  */
+
+
+body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    background-color: #f4e1d2;  /* #f5f5f5 : white */
+    color: #000000;
+    font-size: 14px;
+    padding: 5px 12px;
+}
+
+
+#firstdiv {
+    text-align: center;         /*Requirement : page content centered */
+
+    font-size: small;
+    background-color:#d3d3d3;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 1.6em;
+    /*border */
+
+    border-radius: 15px;
+    margin: 100px;
+    margin-left:14%;
+    margin-right:14%;
+}
+
+
+img{        /*Requirement : image that is styled with position or float. */
+    float:none;
+}
+
+
+/*heading style */
+
+            h2 {                
+            	font-size: 20px;
+                color: orange;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            
+            h3{ 		
+                color: black;
+                font-family: Verdana, Arial, Helvetica, sans-serif;
+                font-size: 100%;
+                font-weight: bold;
+                text-align: left;
+                }
+
+
+/********************** web Font to add a special font to your page*****************/
+            @font-face {								
+            font-family: "orangejuice";
+            src: url('../fonts/orange juice 2.0.ttf');
+            }
+            
+
+            #topPage{			/* style id, and use it to style the page element of your choice.  */
+            
+            /*box-shadow: 10px 10px 5px #888888;*/
+            border-radius: 15px;
+            padding-right:10px;
+            }
+
+/* main heading using the web font */
+
+p.mainheading{
+    
+    font-family: orangejuice;
+    color: black;
+    font-weight: bold;
+    font-size: 34px;
+    text-align: center;
+}
+/*****************************************************************/
+
+/* styling regular paragraphs*/
+
+            p{
+            font-family: sans-serif;
+            color: maroon; 
+            }
+
+/* styling chosen paragraphs*/
+             p.workouts{
+            text-align: left;
+            color:black;
+            }
+/* styling chosen paragraphs*/
+
+             p.firstpara{
+             box-shadow: 10px 10px 5px #888888;
+             text-align: center;
+             font-size: 24px;
+             }
+/* styling chosen paragraphs*/
+
+            p.lastpara{
+            color: black;
+            font-size: 24px;
+            }
+/* styling chosen paragraphs*/
+
+p.proteininfo{
+           color: black;
+            font-size: 24px;
+            box-shadow: 10px 10px 5px #888888;
+           }
+
+/************************** LINK **************************/
+
+
+#linked {               /*Requirement 1 : Create your page with four logical sections - a <header>, two columns, and a <footer> */
+    
+    margin-top:160px;
+    
+    text-align: center;
+    
+    
+    line-height:2em;
+    width: 130px;
+    float: left;
+    
+
+    
+    padding-top:30px;
+    
+    
+    /* border */
+
+    border: thick;
+    border-color:black;
+    border-style: solid;
+    border-width: 5px;
+    background-color:#f5f5f5;
+    border-radius: 15px;
+
+
+}
+
+/* styling chosen div heading */
+#linked h1 {
+    padding-top:30px;
+    
+    
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    padding-bottom:20px;
+    font-size: 15.7px;
+    font-weight: normal;
+    
+}
+
+
+
+
+#linkedsec {            /*Requirement 1 : Create your page with four logical sections - a <header>, two columns, and a <footer> */
+    margin-top:160px;
+    
+    text-align: center;
+ 
+    
+    line-height:2em;
+    width: 130px;
+    float: right;
+    
+    /* border */
+
+    border: thick;
+    border-color:black;
+    border-style: solid;
+    border-width: 5px;
+    background-color:#f5f5f5;
+    border-radius: 15px;
+    
+    padding-top:30px;
+    
+}
+
+/* styling chosen div heading */
+
+#linkedsec h1 {
+    padding-top:30px;
+    
+    
+    color: black;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    padding-bottom:20px;
+    font-size: 15.7px;
+    font-weight: normal;
+    
+    
+}
+
+
+
+
+/* styling the a element for more interactive website */
+
+a{
+    border-radius: 15px;
+    border-color:white;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+}
+
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: #32cd32;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/*********************************************************************/
+
+header {                /*Requirement 1 : Create your page with four logical sections - a <header>, two columns, and a <footer> */
+    padding: 1em;
+    color: orange;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    border-radius: 44px;
+    
+    margin-right:100px;
+    margin-left:100px;
+    margin-bottom:20px;
+    
+    font-size: 24px;
+}
+
+footer {                /*Requirement 1 : Create your page with four logical sections - a <header>, two columns, and a <footer> */
+    padding: 1em;
+    color: orange;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    border-radius: 44px;
+    
+    margin-right:100px;
+    margin-left:100px;
+    margin-bottom:70px;
+    
+    font-size: 24px;
+}
+
+
+
+/* styling article */
+article {
+    display: block;
+    background-color: tan;
+    color: black;
+}
+
+/* styling section and it borders */
+section{
+    padding-left: 30px;
+    padding-bottom: 40px;
+    
+    border: thick;
+    border-color:black;
+    border-style: solid;
+    border-width: 5px;
+    background-color:#f5f5f5;
+}
+
+/* adjusting nav element */
+nav{
+    padding-left:250px;
+    
+}
+/******************** table ******************/
+
+
+
+/* craeting border for table  */
+
+table {
+    border: 1px solid black;
+    border-color: whitesmoke;
+}
+
+/* craeting border for table  */
+
+th{
+    border: 1px solid black;
+    border-color: whitesmoke;
+}
+/* craeting border for table  */
+
+td{
+    border: 1px solid black;
+    border-color: whitesmoke;
+}
+
+
+/* craeting border for table  */
+
+#thetable{
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+
+#thetr{
+    color: black;
+    background-color:#cccccc;
+}
+
+/* background color for tables  */
+#tdfirst{
+    background-color:#add8e6;
+}
+
+#tdsecond{
+    background-color:#00FF7F;
+}
+#tdthird{
+    background-color:#bba3d0;
+}
+#tdfourth{
+    background-color:tan;
+}
+#tdfifth{
+    background-color:peachpuff;
+}
+#tdsixth{
+    background-color:teal;
+}
+#tdsenth{
+    background-color:#98FB98;
+}
+
+
+
+
+
+
+

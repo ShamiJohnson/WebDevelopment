@@ -1,0 +1,422 @@
+
+/*
+ Name: Ehtsham Nisar
+ Date: 03/02/2018
+ 
+ */
+
+body{
+    background-color:#fffff0;
+}
+
+/*Requirement 8: Style the <div> that encapsulates everything in the <body>. */
+#firstdiv {
+    
+    font-size: small;
+    background-color:#1e2a2d;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 1.6em;      /* deals with the line spacing*/
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 15px; /* round borders*/
+}
+
+
+#secdiv {
+    
+    font-size: small;
+    background-color:#3e7b2a;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 1.6em;      /* deals with the line spacing*/
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 15px; /* round borders*/
+}
+
+#thirddiv{
+    font-size: small;
+    background-color:brown;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 1.6em;      /* deals with the line spacing*/
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 15px; /* round borders*/
+    
+}
+
+#fourthdiv{
+    font-size: small;
+    background-color: #fffff0;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 3em;      /* deals with the line spacing*/
+    box-shadow: 10px 10px 5px #888888;
+    border-radius: 15px; /* round borders*/
+    
+}
+#fifthdiv{
+    font-size: small;
+    background-color:green;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    line-height: 3em;      /* deals with the line spacing*/
+    box-shadow: 20px 20px 5px #888888;
+    border-radius: 15px; /* round borders*/
+    
+}
+
+
+/*Requirement 1: Create five unique classes that will be used to style at least ten page elements. Each class should be used in at least two page elements. */
+
+p.first {
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #d3d3d3;
+    padding: 25px;
+    margin: 30px;
+    text-align: center;
+    
+    
+    border-top-left-radius: 0em;
+    border-top-right-radius: 2em;
+    border-bottom-right-radius: 0em;
+    border-bottom-left-radius: 2em;
+} /* Used in the top 2 p elements*/
+
+p.second {
+    color: whitesmoke;
+    border-color: whitesmoke;
+    border-width: 3px;
+    border-style: dotted;
+    text-align:center;
+    font-weight: bold;
+  
+    background-color: gray;
+    
+}/*Used in goat heading and html image attributes*/
+
+p.third{
+    border-radius: 15px;
+    border-color:white;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+    
+    color: black;
+    margin:80px;
+    margin-left:250px;
+    margin-right:300px;
+    padding-top:5px;
+    padding-left: 60px;
+    background-color:#fffff0;
+} /* Used in the picture and the link p attribute*/
+
+
+p.fourth {
+    color: black;
+    background-color: gray;
+    
+} /* Used in the mimic ocopus and Button*/
+
+p.fifth {
+    color: black;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 1px;
+    border-color:white;
+    border-width: 1px;
+    border-style: solid;
+    background-color: peachpuff;
+    
+}/* Used in footer p and another p element*/
+
+
+
+
+
+
+/*Requirement 6: Style the <footer> element. */
+footer {
+    padding: 1em;
+    color: white;
+    background-color: darkgrey;
+    clear: left;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+/*Requirement 7: Style the <button> element. It could change colors or glow when clicked. */
+button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left:250px;
+    cursor: pointer;
+    
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    
+    
+    border: whitesmoke;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+
+/*Requirement 4: Style all <a> tags using pseudo-classes for normal, hover, and visited states. */
+a{
+    border-radius: 15px;
+    border-color:white;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+}
+
+/* unvisited link */
+a:link {
+    color: green;
+}
+
+/* visited link */
+a:visited {
+    color: red;
+}
+
+/* mouse over link */
+a:hover {
+    color: #32cd32;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+/*Requirement 10: Style the <ol> and its <li> elements. */
+ol {
+    border-radius: 15px;
+    border-color:white;
+    border-width: 3px;
+    border-style: solid;
+    background-color: whitesmoke;
+    
+    list-style-type: decimal;
+    color: whitesmoke;
+    background-color: black;
+    padding-left:40px;
+    margin: 30px;
+}
+
+
+/*Requirement 9: Style the <ul> and its <li> elements. */
+ul {
+    border-radius: 15px;
+    border-color:white;
+    border-width: 10px;
+    border-style: solid;
+    background-color: whitesmoke;
+    
+    list-style-type: disc;
+    color: black;
+    background-color: #d3d3d3;
+    padding-left:30px;
+    margin: 30px;
+    margin-right:450px;
+    margin-left: 300px;
+}
+ul li {
+    color: white;
+    
+}
+
+
+
+/*Requirement 11: Style the <table> and its <th> and <td> elements. If you're new to tables, pages 603 & 604 of the text will show you a quick view of a simple one. */
+
+table {
+    border: 3px solid black;
+    border-color: whitesmoke;
+}
+
+th{
+    border: 3px solid black;
+    border-color: whitesmoke;
+}
+
+td{
+    border: 3px solid black;
+    border-color: whitesmoke;
+}
+
+
+/*Requirement 2: Create three unique ids. Each id can be used in exactly one page element. */
+
+#thetable{
+    color: black;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#thetr{
+    color: whitesmoke;
+    background-color:black;
+}
+
+#tdfirst{
+    background-color:tan;
+}
+
+#tdsecond{
+    background-color:tan;
+}
+#tdthird{
+    background-color:tan;
+}
+#tdfourth{
+    background-color:tan;
+}
+#tdfifth{
+    background-color:tan;
+}
+#tdsixth{
+    background-color:tan;
+}
+
+/*Requirement 3: Style each heading element (<h1> - <h6>). */
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    
+    color: black;
+    border-radius: 15px;
+    border-color:white;
+    border-width: 2px;
+    border-style: solid;
+    background-color: peachpuff;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    
+    color: orange;
+    border-radius: 8px;
+    border-color:gray;
+    border-width: 4px;
+    border-style: solid;
+    background-color: black;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    
+    color: teal;
+    border-radius: 15px;
+    border-color:#add8e6;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #c0c0c0;
+}
+
+h4 {
+    display: block;
+    font-size: 1em;
+    margin-top: 1.33em;
+    margin-bottom: 1.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    
+    color: #adf8eb;
+    border-radius: 15px;
+    border-color:#add8e6;
+    border-width: 1px;
+    border-style: solid;
+    background-color:  #a9a9a9;
+}
+
+h5{
+    display: block;
+    font-size: .83em;
+    margin-top: 1.67em;
+    margin-bottom: 1.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    
+    color: green;
+    border-radius: 15px;
+    border-color:#add8e6;
+    border-width: 1px;
+    border-style: solid;
+    background-color: whitesmoke;
+}
+
+
+h6{
+    display: block;
+    font-size: .67em;
+    margin-top: 2.33em;
+    margin-bottom: 2.33em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    
+    color: orange;
+    border-radius: 15px;
+    border-color:#add8e6;
+    border-width: 1px;
+    border-style: solid;
+    background-color: black;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
