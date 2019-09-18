@@ -1,0 +1,85 @@
+<!doctype html>
+
+<!--
+ Filename: pickMe.html
+ Written by: Ehtsham Nisar (EN)
+ Purpose: To create pickMe using javascript.
+ Date: 7 November 2018
+ Modification History: Original Build
+ 7 November 2018: updated <p> element's text
+ -->
+
+
+
+<html lang="en">
+    <head>
+    
+        <title>Pick Me!</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link rel="stylesheet" href="css/pickMe.css">
+        		<!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script type="text/javascript" src="js/pickMe.js"></script>
+    </head>
+    
+    <body class="bg">
+
+
+        <div id="content">
+
+<ul id = "crew_ul"> 
+    <li id="Crew1" class="Brave"> <button id="button1">Selection by tag</button>  </li>
+    <li id="Crew2" class="Brave"> <button id="button2">Selection by class</button> </li>
+    <li id="Crew3" class="Brave"> <button id="button3">Selection by id</button> </li>
+    <li id="Crew4" class="Brave"> <button id="button4">Multiple Instructions</button> </li>
+    <li id="Crew5" class="Brave"> <button id="button5">Filtered Tag</button> </li>
+    <li id="Crew6" class="Brave"> <button id="button6">Filtered Class</button> </li>
+    <li id="Crew7" class="Brave"> <button id="button7">Filtered id</button> </li>
+
+   
+</ul>
+
+
+<ul id = "reult_ul"> 
+    <!-- Selection by tag: <p> -->
+    <li id="Crew1_PICK" class="Brave"> <p></p> </li>
+    <li id="Crew2_PICK" class="Brave"> <p></p> </li>
+
+    <!-- Selection by class: NOTBrave -->
+    <li id="Crew3_PICK" class="NOTBrave">  </li>
+    <li id="Crew4_PICK" class="NOTBrave">  </li>
+
+    <!-- Selection by id: Crew5_PICK-->
+    <li id="Crew5_PICK" class="Brave">  </li>
+
+    <!-- multiple instructions-->
+    <li id="Crew6_PICK" class="Brave">  </li>
+
+    <!-- filtered tag-->
+    <li id="Crew7_PICK" class="Brave">  </li>
+
+</ul>
+
+<div id = "lastContent">
+<!-- filtered class-->
+<div id="Crew8_PICK" class="classBrave">Filter by class</div>
+
+<!-- filtered id-->
+<div id="Crew9_PICK" class="brave">Filter by id
+</div>
+
+</div>
+
+</div>
+
+    
+
+    </body>
+
+    
+</html>
+

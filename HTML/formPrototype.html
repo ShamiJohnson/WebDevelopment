@@ -1,0 +1,306 @@
+<!doctype html>
+
+<!--
+ Filename: moverShakers.html
+ Written by: Ehtsham Nisar (EN)
+ Purpose: To create moverShakers using javascript.
+ Date: 14 November 2018
+ Modification History: Original Build
+ 14 November 2018: created form to move picture around the webpage 
+ -->
+
+ <!-- Tested in google chrome, safari, firefox and microsoft edge  -->
+ <!-- Text was displayed slightly bigger in firefox -->
+
+
+
+
+<html lang="en">
+    <head>
+    
+        <title>Form Prototype</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/formPrototype.css">
+        <link rel="stylesheet" href="css/prices.css">
+
+        <link href="theme/jquery-ui.css" rel="stylesheet">
+        
+
+     
+        		
+    </head>
+    
+    <body class="bg">
+
+
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Schedule Appointment</a></li>
+        <li><a href="#tabs-2">Prices</a></li>
+        <li><a href="#tabs-3">Output!</a></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="tabs-1">   
+
+
+
+
+<div id="main"><!--Requirement 11: Use at least five CSS rules for styling to create a two-column layout. -->
+            
+            
+            <div class="container">
+                <!--Requirement 8: Each field should have a name attribute so the data will be sent to the email when the user clicks the submit button.  -->
+                
+                
+                
+                <!--Requirement 2: Use at least three <input> elements that allow typing. -->
+                <form id="contact">
+                    <h3>iRepair</h3>
+                
+                    <fieldset> <!-- Lets the user input their name -->
+                        <input type="text" id="name"  name="name" placeholder="First Name Last Name" tabindex="1" autofocus >
+                          
+                            </fieldset>
+                    <fieldset>
+               <!-- Lets the user input their email -->
+                        <input placeholder=" Email Address" type="email" id="email" name="email" tabindex="2">
+                          
+                            </fieldset>
+
+
+
+                    <fieldset>
+                        <!-- Lets the user input their phone number -->
+                        <input placeholder=" Phone Number" type="tel" id="phone" name="phone" autocomplete = "on"  tabindex="3" >
+                            
+                            </fieldset>
+
+
+
+
+     <fieldset>
+
+                                 <h2>
+          Please enter your password:  <input type="password" autocomplete = "on" >
+      </h2>
+
+
+  </fieldset>
+
+
+
+                             <!--Requirement 3: Use a radio button with at least two mutually exclusive selections. -->
+                    <div class="tableRow">
+                        <label>Contact me through:</label> <!-- ASking user what is their preffered way of contacting. User can not pick multiple options -->
+                  
+                        <input type="radio" id="call_contact" name="contactType" value="call">
+                            <label for="call_contact">Call</label>
+                            
+                            <input type="radio" id="text_contact" name="contactType" value="text">
+                                <label for="text_contact">Text</label>
+                                
+                                <input type="radio" id="email_contact" name="contactType" value="email" checked>
+                                    <label for="email_contact">Email</label>
+                             
+                                    </div>
+                    
+                   
+
+
+
+
+                    
+          
+                    
+                   <!--Requirement 4: Use the <select> and <option> elements to create a menu control with at least three possible selections. -->
+                    <div class="tableRow" >
+                        <label for="gender">
+                            iPhone:
+                        </label>
+                        <!-- Drop down menu for the user's gender -->
+                        <select id="gender" name="gender">
+                            <option value="Other">Select phone</option>
+                            <option value="five">5/5c/5s/SE</option>
+                            <option value="six">6</option>
+                            <option value="sixPlus">6+</option>
+                            <option value="sixS">6s</option>
+                            <option value="sixSPlus">6s+</option>
+                            <option value="seven">7</option>
+                            <option value="sevenPlus">7+</option>
+                            <option value="eight">8</option>
+                            <option value="eightPlus">8+</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    
+                   
+                    
+             
+                    
+                    <!--Requirement 5: Create checkboxes with at least three possible selections. -->
+                    <fieldset>
+                        <div class="tableRow">
+                            <label>Repair Part:</label> <!-- Lets the user select their goals. User can pick multiple options  -->
+                            
+                            <input type="checkbox" id="muscle_extras" name="extras[]" value="muscle" checked>
+                                <label for="muscle_extras">Screen</label>
+                                
+                                <input type="checkbox" id="strength_extras" name="extras[]" value="strength">
+                                    <label for="strength_extras">Battery</label>
+                                    
+                                    <input type="checkbox" id="fatLoss_extras" name="extras[]" value="fatLoss">
+                                        <label for="fatLoss_extras">Other</label>
+                                        
+                                        </div>
+                    </fieldset>
+                    
+                    
+                    
+                    <!--Requirement 1: Use the <fieldset> and <legend> tags to group related elements.  -->
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        
+                        <!--Requirement 6: Use a <textarea> field with default text. -->
+                        <textarea placeholder="Type your Message Here...." name="message" tabindex="5" ></textarea>
+                    </fieldset>
+                    
+
+
+
+<!-- Datepicker -->
+<h2 class="demoHeaders">Appointment Date</h2>
+<div id="datepicker"></div>
+
+
+<!-- Spinner -->
+<h2 class="demoHeaders">Apointment Hour</h2>
+<input id="spinner">
+
+
+
+
+
+<!-- Autocomplete -->
+<h2 class="demoHeaders">Location</h2>
+<div>
+    <input id="autocomplete" title="type &quot;a&quot;">
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Checkboxradio -->
+<h2 class="demoHeaders">Preferred Technician</h2>
+
+
+
+    <div id="radioset">
+        <input type="radio" id="radio1" name="radio"><label for="radio1">John</label>
+        <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Burak</label>
+        <input type="radio" id="radio3" name="radio"><label for="radio3">Shawn</label>
+    </div>
+
+
+
+
+      <button name="reset" type="reset" id="Reset">Reset Everyting</button>
+
+
+ 
+
+                 
+                </form>
+
+<button id="submit">Submit</button>
+
+          
+            </div>
+            
+            
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <div id="tabs-2">
+       
+    </div>
+
+
+
+
+
+
+    <div id="tabs-3">
+
+      <div id= "textOutput"></div>
+
+</div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script type="text/javascript" src="js/formPrototype.js"></script>
+
+
+        <script src="theme/external/jquery/jquery.js"></script>
+<script src="theme/jquery-ui.js"></script>
+
+    </body>
+
+    
+</html>
+

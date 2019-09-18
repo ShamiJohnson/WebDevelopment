@@ -1,0 +1,64 @@
+<!doctype html>
+
+<!--
+ Filename: triggered.html
+ Written by: Ehtsham Nisar (EN)
+ Purpose: To create triggered using javascript.
+ Date: 14 November 2018
+ Modification History: Original Build
+ 14 November 2018: created triggered.html
+ -->
+
+
+
+<html lang="en">
+    <head>
+    
+        <title>Triggered</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link rel="stylesheet" href="css/triggered.css">
+        		
+    </head>
+     
+    <body class="bg">
+<div id = "content">
+ <!--  used for displaying result when the window is resized  -->
+<div id = "resize">Resize Window </div>
+
+ <!-- used to manipulate html through mouse activiy  -->
+<p class = "mouse"> Click me away! </p>
+
+ <!-- used to calculate the user's keyboard activity  -->
+<p>Start typing! <input type="text"></p>
+<p>Keyboard Activity: <span>0</span></p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script type="text/javascript" src="js/triggered.js"></script>
+
+    </body>
+
+    
+</html>
+

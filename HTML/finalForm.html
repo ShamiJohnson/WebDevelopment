@@ -1,0 +1,168 @@
+<!doctype html>
+<!--
+ Filename: finalForm.html
+ Written by: Ehtsham Nisar (EN)
+ Purpose: To create finalForm using javascript.
+ Date: 8 December 2018
+ Modification History: Original Build
+ 8 December 2018: created finalForm to add functionality to the form, scrape user's data using form and then displaying that data on a different tab.
+ -->
+
+ <!-- Tested in google chrome, safari, firefox and microsoft edge  -->
+ <!-- Text was displayed slightly bigger in firefox -->
+
+
+
+<html lang="en">
+<head>
+   <title>Form</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/prices.css">
+
+        <link href="theme/jquery-ui.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/formPrototype.css">
+</head>
+
+<body>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Schedule Appointment</a></li>
+                <li><a href="#tabs-2">OUTPUT!</a></li>
+            </ul>
+
+            <div id="tabs-1">     
+
+                <form id="contact">
+            <h3>iRepair</h3>
+              
+                     <fieldset> <!-- Lets the user input their name -->
+                   <input type="text" id="userName" name="userName" placeholder="First Name Last Name" required autofocus>
+                   </fieldset>
+
+                   <fieldset>
+               <!-- Lets the user input their email -->
+                   <input type="email" id="email" name="email" placeholder="test@example.com">
+                   </fieldset>
+
+                   <fieldset>
+                     <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                   </fieldset>
+
+                   <fieldset>
+                    <!-- Lets the user input their Password -->
+                     <label for=password>Enter Password: </label>
+                    <input type="password" id="password" name="password" placeholder="password" autocomplete = "on">
+                   </fieldset>
+
+                   <fieldset>
+                       <!-- radiobox for preffered way of comunication -->
+                    <b>Preferred Communication Method: </b>         
+
+                       <input id="Call" type="radio" name="radio" value="Call">
+                        <label for="Call">Call</label>
+
+                        <input id="Text" type="radio" name="radio" checked="checked" value="Text">
+                        <label for="Text">Text</label>
+
+                        <input id="Email" type="radio" name="radio" value="Email">
+                        <label for="Email">Email</label>
+                   </fieldset>
+
+                   <fieldset>
+                    <!-- the <select> and <option> elements to create a menu control with at least three possible selections. -->
+                    <div class="tableRow" >
+                        <label for="device">
+                            iPhone:
+                        </label>
+                        <!-- Drop down menu for the user's device -->
+                        <select id="device" name="device">
+                            <option value="Other">Select phone</option>
+                            <option value="five">5/5c/5s/SE</option>
+                            <option value="six">6</option>
+                            <option value="sixPlus">6+</option>
+                            <option value="sixS">6s</option>
+                            <option value="sixSPlus">6s+</option>
+                            <option value="seven">7</option>
+                            <option value="sevenPlus">7+</option>
+                            <option value="eight">8</option>
+                            <option value="eightPlus">8+</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+        
+                   </fieldset>
+
+
+                   <fieldset>
+                    <!-- checkbox for getting the repair device information  -->
+                    <label for="Screen"><u>Repair Part</u></label> <br>
+                   Screen<input id= "Screen" name="repairPart" type="checkbox" value="Screen"> <br>                   Battery<input name="repairPart" type="checkbox" value="Battery"> <br>
+                   Other<input name="repairPart" type="checkbox" value="Other">
+                   </fieldset>
+
+                   <fieldset>
+                        <legend>Additional Information</legend>
+                        
+                        <!-- Use a <textarea> field with default text. -->
+                        <textarea placeholder="Type your Message Here...." name="text_area" tabindex="5" id="text_area" ></textarea>
+                    </fieldset>
+
+                    <fieldset>
+
+                   <div id="datepickerID">
+                    <!-- Datepicker -->
+                        <h2 class="left">Appointment Date</h2>
+                        <div id="datepicker" class="left"></div>
+                   </div>
+
+                   <div id="spinnerAutocomplete">
+<input name="spinner" id="spinner" class="right" required> <br>
+<!-- Autocomplete --> <input name="autocomplete" id="autocomplete" title="type &quot;a&quot;" placeholder="am/pm" class="right"> <br><br>
+                   </div>
+                 </fieldset>
+
+                   <div id="formButtons">
+                    <!-- reset button for resetting all information -->
+
+                   <input id="Reset" type="reset">
+
+                   <!-- submit button to get the data and then display result on a separate tab -->
+                <input id="submit" type="submit" value="Submit">
+                </div>
+                
+        </form> 
+    </div>
+
+
+            <div id="tabs-2"> 
+
+              <!-- result output area -->
+                <p id="formOutput"> <br> </p>
+</div>
+         
+    
+</div>  
+
+
+            <!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        
+
+
+        <script src="theme/external/jquery/jquery.js"></script>
+<script src="theme/jquery-ui.js"></script>
+
+
+<script src="validation/dist/jquery.validate.js"></script>
+
+<!-- Link to js file specific to this html page below hosted library link -->
+        <script src="js/customForm.js"></script>
+           <script src="js/form.js"></script>
+ 
+</body>
+
+</html>

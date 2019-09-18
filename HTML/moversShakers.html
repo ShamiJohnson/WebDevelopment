@@ -1,0 +1,115 @@
+<!doctype html>
+
+<!--
+ Filename: moverShakers.html
+ Written by: Ehtsham Nisar (EN)
+ Purpose: To create moverShakers using javascript.
+ Date: 14 November 2018
+ Modification History: Original Build
+ 14 November 2018: created form to move picture around the webpage 
+ -->
+
+ <!-- Tested in google chrome, safari, firefox and microsoft edge  -->
+ <!-- Text was displayed slightly bigger in firefox -->
+
+
+
+
+<html lang="en">
+    <head>
+    
+        <title>Movers Shakers</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link rel="stylesheet" href="css/moversShakers.css">
+        		
+    </head>
+    
+    <body class="bg">
+
+ <!-- first form element is created which will hold the effect buttons  -->
+    <form id = "first_form">
+    <fieldset>
+        <legend>show</legend>
+        <button type="button" id="hide">hide</button>
+        <button type="button" id="show">show</button>
+        <button type="button" id="toggle">toggle</button>
+      </fieldset>
+    <fieldset>
+        <legend>Slide</legend>
+        <button type="button" id="slideUP">Slide Up</button>
+        <button type="button" id="slideDown">Slide Down</button>
+      </fieldset>
+    <fieldset>
+        <legend>fade</legend>
+        <button type="button" id="fadeOut">Fade Out</button>
+        <button type="button" id="fadeIn">Fade In</button>
+      </fieldset>
+   <fieldset>
+        <legend>Chaining</legend>
+        <button type="button" id="chaining">Chaining</button>
+      </fieldset>
+    <fieldset>
+        <legend>Multiple Parameters</legend>
+        <button type="button" id="MultipleParameters">Multiple Parameters</button>
+      </fieldset>
+ <fieldset>
+        <legend>Reset</legend>
+
+        <button type="button" class="Reset">reset</button>
+       
+      </fieldset>
+    </form>
+ 
+
+
+<!-- secod  form element is created which will hold the animations buttons  -->
+    <form id = "second_form">
+       <fieldset>
+        <legend>Edge</legend>
+        <button type="button" id="topEdge">Top Edge</button>
+        <button type="button" id="BottomEdge">Bottom Edge</button>
+        <button type="button" id="LeftEdge">Left Edge</button>
+        <button type="button" id="RightEdge">Right Edge</button>
+      </fieldset>
+    <fieldset>
+        <legend>Nudge</legend>
+        <button type="button" id="NudgeLeft">Nudge Left</button>
+        <button type="button" id="NudgeRight">Nudge Right</button>
+      </fieldset>
+    <fieldset>
+        <legend>Glide</legend>
+        <button type="button" id="Glide">Glide</button>
+      </fieldset>
+   <fieldset>
+        <legend>Easing</legend>
+        <button type="button" id="Easing">Easing</button>
+      </fieldset>
+    <fieldset>
+        <legend>Reset</legend>
+        <button type="button" class="Reset">reset</button>
+      </fieldset>
+    </form>
+
+<!-- the picture div which will be moving using jQuery -->
+  <div id="content">
+
+    <div id="target">
+      <p><img src="image/target_pic.jpg" alt="targetPic" height="300" width="300"></p>
+
+    </div>
+  </div>
+
+
+    <!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script type="text/javascript" src="js/moversShakers.js"></script>
+
+    </body>
+
+    
+</html>
+

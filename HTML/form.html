@@ -1,0 +1,238 @@
+<!doctype html>
+
+<!--
+ Filename: form.html
+ Written by: Ehtsham Nisar (EN)
+ Purpose: To create form using javascript.
+ Date: 25 November 2018
+ Modification History: Original Build
+ 25 November 2018: created form to move picture around the webpage 
+ -->
+
+ <!-- Tested in google chrome, safari, firefox and microsoft edge  -->
+ <!-- Text was displayed slightly bigger in firefox -->
+
+
+
+
+<html lang="en">
+    <head>
+    
+        <title>Form Prototype</title>
+        <meta charset="utf-8">
+        <!-- Link to some stylesheet goes first -->
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="stylesheet" href="css/formPrototype.css">
+        <link rel="stylesheet" href="css/prices.css">
+
+        <link href="theme/jquery-ui.css" rel="stylesheet">
+        	
+    </head>
+    
+    <body class="bg">
+
+
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Schedule Appointment</a></li>
+        <li><a href="#tabs-2">Output!</a></li>
+        
+    </ul>
+
+
+
+    <div id="tabs-1">   
+
+
+
+
+<div id="main"><!--Requirement 11: Use at least five CSS rules for styling to create a two-column layout. -->
+            
+            
+            <div class="container">
+                <!--Requirement 8: Each field should have a name attribute so the data will be sent to the email when the user clicks the submit button.  -->
+                
+                
+                
+                <!--Requirement 2: Use at least three <input> elements that allow typing. -->
+                <form id="contact">
+                    <h3>iRepair</h3>
+                
+                    <fieldset> <!-- Lets the user input their name -->
+                        <input type="text" id="userName"  name="name" placeholder="First Name Last Name" tabindex="1" autofocus >
+                          
+                            </fieldset>
+                    <fieldset>
+               <!-- Lets the user input their email -->
+                        <input placeholder=" Email Address" type="email" id="email" name="email" tabindex="2">
+                          
+                            </fieldset>
+
+
+
+                    <fieldset>
+                        <!-- Lets the user input their phone number -->
+                        <input placeholder=" Phone Number" type="tel" id="phone" name="phone" autocomplete = "on"  tabindex="3" >
+                            
+                            </fieldset>
+
+
+
+
+     <fieldset>
+
+                                 <h2>
+          Please enter your password:  <input type="password" autocomplete = "on" id="password">
+      </h2>
+
+
+  </fieldset>
+
+  <fieldset>
+
+ <!-- Checkboxradio -->
+<b>Preferred Communication Method: </b> 
+
+                         
+
+
+                  <div id="radioset">
+                   
+        <input type="radio" id="Call" name="radio" value="Call">
+        <label for="Call">Call</label>
+
+        <input type="radio" id="Text" name="radio" checked="checked" value="Text">
+        <label for="Text">Text</label>
+
+        <input type="radio" id="Email" name="radio" value="Email">
+        <label for="Email">Email</label>
+    </div>
+  
+                    
+        </fieldset>           
+
+
+                    
+                   <!--Requirement 4: Use the <select> and <option> elements to create a menu control with at least three possible selections. -->
+                    <div class="tableRow" >
+                        <label for="gender">
+                            iPhone:
+                        </label>
+                        <!-- Drop down menu for the user's gender -->
+                        <select id="gender" name="gender">
+                            <option value="Other">Select phone</option>
+                            <option value="five">5/5c/5s/SE</option>
+                            <option value="six">6</option>
+                            <option value="sixPlus">6+</option>
+                            <option value="sixS">6s</option>
+                            <option value="sixSPlus">6s+</option>
+                            <option value="seven">7</option>
+                            <option value="sevenPlus">7+</option>
+                            <option value="eight">8</option>
+                            <option value="eightPlus">8+</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    
+                    
+                    <!--Requirement 5: Create checkboxes with at least three possible selections. -->
+                    <fieldset>
+                        
+                            <label>Repair Part:</label> <!-- Lets the user select their goals. User can pick multiple options  -->
+
+                     <input name="repairPart" type="checkbox" value="Screen" class="check">Screen<br>
+                    <input name="repairPart" type="checkbox" value="Battery" class="check">Battery <br>
+                    <input name="repairPart" type="checkbox" value="Other" class="check">Other<br>
+                    </fieldset>
+
+                    
+                    <!--Requirement 1: Use the <fieldset> and <legend> tags to group related elements.  -->
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        
+                        <!--Requirement 6: Use a <textarea> field with default text. -->
+                        <textarea placeholder="Type your Message Here...." name="message" tabindex="5" id="text_area" ></textarea>
+                    </fieldset>
+                    
+
+
+
+<!-- Datepicker -->
+<h2 class="demoHeaders">Appointment Date</h2>
+<div id="datepicker"></div>
+
+
+
+<!-- Spinner -->
+<h2 class="demoHeaders" >Apointment Hour</h2>
+<input id="spinner"> <input id="autocomplete" title="type &quot;a&quot;" placeholder="am/pm" > <br><br>
+
+
+
+      <button name="reset" type="reset" id="Reset">Reset Everyting</button>
+
+      
+
+      <button type="button" id ="submit" value = "submit">Submit</button>
+
+
+                </form>
+
+          
+            </div>
+            
+            
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <div id="tabs-2">
+        <div id= "textOutput"></div>
+       
+    </div>
+
+
+
+
+
+
+    
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script src="js/form.js"></script>
+
+
+        <script src="theme/external/jquery/jquery.js"></script>
+<script src="theme/jquery-ui.js"></script>
+
+    </body>
+
+    
+</html>
+

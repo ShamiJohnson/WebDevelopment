@@ -1,0 +1,54 @@
+<!doctype html>
+
+<!--
+ Filename: ahoy.html
+ Written by: Ehtsham Nisar (EN)
+ Purpose: To create ahoy using javascript.
+ Date: 7 November 2018
+ Modification History: Original Build
+ 7 November 2018: updated <p> element's text
+ -->
+
+
+
+<html lang="en">
+    <head>
+    
+        <title>jQuery Development Environment Setup</title>
+        <meta charset="utf-8">
+        
+		<!-- Link to hosted jQuery library goes after css file but before local js file -->
+        <!-- Probable performance boost if at very bottom of file -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+        <!-- Link to js file specific to this html page goes below hosted library link -->
+        <script type="text/javascript" src="js/ahoy.js"></script>
+    </head>
+    
+    <body>
+
+        <!-- if the jQuery code runs correctly then this p tag will not be displayed -->
+    
+            <p>
+                This paragraph tag exists so that I can play with it in jQuery
+            </p>
+
+
+
+
+             <!-- BUTTON: this attaches content to the end of the <p> content -->
+             <button type="button" id="btnAppend">Append</button>
+
+
+             <!-- BUTTON: this overwrites the <p> content -->
+             <button type="button" id="btnHTML">HTML</button>
+   
+
+  
+    
+
+    </body>
+
+    
+</html>
+
