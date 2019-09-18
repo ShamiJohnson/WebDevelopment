@@ -1,0 +1,64 @@
+/*
+ TITLE: pirate.css
+ AUTHOR: Ehtsham Nisar (EN)
+ PURPOSE: Style the pirate.html page
+ ORIGINALLY CREATED ON: 29 August 2018
+ LAST MODIFIED BY: Ehtsham Nisar
+ MODIFICATION HISTORY:
+ 29 August 2018: Add header block comment (EN)
+ */
+
+.bg {
+    /* The image used */
+    background-image: url("../image/bgPic.jpg");
+    
+    /* Full height */
+    padding-top: 5%;
+    
+    background-repeat: no-repeat;
+    background-size:1300px 1000px;
+}
+
+.captain{            /* Define the formatting for the <div id="heading"> box */
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px #EEE;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+.crew {
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px #EEE;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+
+.span_captain {
+    color: red;
+}
+
+.span_crew {
+    color: blue;
+}
+
+.span_ship {
+    color: gray;
+}
+
+
+
+
+
+
+
+
+
+

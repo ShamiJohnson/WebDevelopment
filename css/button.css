@@ -1,0 +1,52 @@
+/*
+ TITLE: button.css
+ AUTHOR: Ehtsham Nisar (EN)
+ PURPOSE: Style the button.html page
+ ORIGINALLY CREATED ON: 24 October 2018
+ LAST MODIFIED BY: Ehtsham Nisar
+ MODIFICATION HISTORY:
+ 24 October 2018: Style conversion.html (EN)
+ */
+
+.bg {
+    /* The image used */
+    background-image: url("../image/bgPic.jpg");
+    
+    /* Full height */
+    padding-top: 1%;
+    
+    background-repeat: no-repeat;
+    background-size:1300px 1000px;
+}
+
+/* body style text */
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+/* content for javascript in a box */
+#content{
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px #EEE;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    margin-top:1%;
+}
+
+
+
+
+
+
+
+
+
+

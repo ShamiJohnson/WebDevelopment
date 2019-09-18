@@ -1,0 +1,83 @@
+/*
+ TITLE: triggered.css
+ AUTHOR: Ehtsham Nisar (EN)
+ PURPOSE: Style the triggered.html page
+ ORIGINALLY CREATED ON: 14 November 2018
+ LAST MODIFIED BY: Ehtsham Nisar
+ MODIFICATION HISTORY:
+ 14 November 2018: Style triggered.html (EN)
+ */
+
+
+ul {
+
+	list-style: none;
+  }
+
+
+#crew_ul{
+	float: left;
+
+}
+
+#reult_ul{
+	
+	padding-right: 50px;
+	margin-right: 30px;
+	float:right;
+}
+
+
+#crew_ul li {
+	padding-bottom: 15px;
+}
+
+
+#lastContent{
+	float:left;
+	padding-top: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+.bg {
+    /* The image used */
+    background-color: black;
+    
+    /* Full height */
+    padding-top: 1%;
+    
+    background-repeat: no-repeat;
+    background-size:1300px 1000px;
+}
+
+/* body style text */
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+/* content for javascript in a box */
+#content{
+    width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px #EEE;
+    min-height: 700px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    margin-top:1%;
+
+}
+

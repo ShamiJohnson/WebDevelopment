@@ -1,0 +1,61 @@
+/*
+ TITLE: strings.css
+ AUTHOR: Ehtsham Nisar (EN)
+ PURPOSE: Style the strings.html page
+ ORIGINALLY CREATED ON: 10 October 2018
+ LAST MODIFIED BY: Ehtsham Nisar
+ MODIFICATION HISTORY:
+ 10 October 2018: Style strings.html (EN)
+ */
+
+.bg {
+    /* The image used */
+    background-image: url("../image/loops.png");
+    
+    
+    
+    background-repeat: no-repeat;
+    background-size:1500px 850px;
+
+    
+}
+
+/* body style text */
+body {
+    
+    font-family: helvetica, arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+/* content for javascript in a box */
+#content{
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px #EEE;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: left;
+    margin-top:1%;
+}
+
+header{
+    font-size:30px;
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+

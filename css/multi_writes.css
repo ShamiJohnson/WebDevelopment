@@ -1,0 +1,58 @@
+/*
+ TITLE: multi_writes.css
+ AUTHOR: Ehtsham Nisar (EN)
+ PURPOSE: Style the multi_writes.html page
+ ORIGINALLY CREATED ON: 4 September 2018
+ LAST MODIFIED BY: Ehtsham Nisar
+ MODIFICATION HISTORY:
+ 4 September 2018: Style multi_writes.html (EN)
+ */
+
+.bg {
+    /* The image used */
+    background-image: url("../image/bgPic.jpg");
+    
+    /* Full height */
+    padding-top: 5%;
+    
+    background-repeat: no-repeat;
+    background-size:1300px 1000px;
+}
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    }
+
+/* EXTRA CREDIT: Place the textContent and innerHTML output onto different parts of the same page.  */
+
+#innerHTML_Place{
+    float: right;
+    
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px #EEE;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    margin-top:28%;
+}
+
+#textContent_Place{
+    float: left;
+    
+    width: 400px;
+    margin: 0 auto;
+    box-shadow: 0 2px 15px #EEE;
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+

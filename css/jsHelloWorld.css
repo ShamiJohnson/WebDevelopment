@@ -1,0 +1,33 @@
+/*
+ TITLE: jsHelloWorld.css
+ AUTHOR: Ehtsham Nisar (EN)
+ PURPOSE: Style the jsHelloWorld.html page
+ ORIGINALLY CREATED ON: 29 August 2018
+ LAST MODIFIED BY: Ehtsham Nisar
+ MODIFICATION HISTORY:
+ 29 August 2018: Add header block comment (EN)
+ */
+
+.bg {
+    /* The image used */
+    background-image: url("../image/bgPic.jpg");
+    
+    /* Full height */
+    padding-top: 2%;
+
+    background-repeat: no-repeat;
+    background-size:1300px 1000px;
+}
+
+
+p {
+    text-align: center; /* brings the text in center */
+    color:yellow; /* colors the text */
+    font-weight: bold; /* makes the text bold */
+    font-size: 50px; /* resizing text */
+}
+
+
+
+
+
